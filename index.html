@@ -188,7 +188,23 @@
             color: #a72323;
             background-color: var(--incorrect-color);
         }
+        .watermark {
+            position: absolute; /* Agar tidak mengganggu tata letak utama */
+            bottom: 10px;      /* Jarak dari bawah */
+            left: 50%;        /* Posisi tengah horizontal */
+            transform: translateX(-50%); /* Koreksi posisi tengah */
+            font-size: 12px;    /* Ukuran font lebih kecil */
+            color: #ccc;       /* Warna lebih samar */
+            font-family: 'Arial', sans-serif; /* Ganti dengan font yang lebih umum dan halus */
+            font-style: italic;
+        }
 
+        .game-container {
+            /* Tambahkan padding-bottom agar watermark tidak tertutup */
+            padding-bottom: 40px;
+            /* ... kode CSS game-container lainnya ... */
+        }
+        
     </style>
 </head>
 <body>
@@ -216,7 +232,7 @@
     </div>
 
     <footer class="watermark">
-    من فكرة وإعداد: أحمد عبيد الله الإندونيسي
+    إعداد: أحمد عبيد الله الإندونيسي
     </footer>
     
     <script>
